@@ -20,7 +20,7 @@ export const ItemListContainer = () => {
       });
   }, []);
 
-  console.log(myProducts);
+  // console.log(myProducts);
 
   return (
     <div className="container-il">
