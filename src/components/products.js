@@ -1,12 +1,12 @@
 export const products = [
   {
     id: "1",
-    title: "Nike Dunk Low Retro Premium",
+    title: "Nike Dunk Low Retro",
     price: 209.9,
     stock: 5,
     imageUrl:
-      "https://res.cloudinary.com/ddtbb44ju/image/upload/v1728594819/NIKE_DUNK_LOW_RETRO_PRM_acwaag.jpg",
-    description: "Nike Dunk Low Retro Premium",
+      "https://res.cloudinary.com/ddtbb44ju/image/upload/v1728934029/DZ2794-100_0_hymgov.jpg",
+    description: "Nike Dunk Low Retro",
     category: "Urbano",
   },
   {

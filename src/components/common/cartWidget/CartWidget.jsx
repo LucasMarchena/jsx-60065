@@ -1,8 +1,9 @@
 import { IoIosCart } from "react-icons/io";
+import "./cartWidget.css";
 
 export const CartWidget = () => {
   return (
-    <div>
+    <div className="container-cartW">
       <IoIosCart />
       <span>0</span>
     </div>
