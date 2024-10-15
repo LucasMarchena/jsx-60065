@@ -1,30 +1,31 @@
-import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import "./navbar.css";
 import { CartWidget } from "../../common/cartWidget/CartWidget";
 
 export const Navbar = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar className="navBar-logo">
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <a href="">
           <img
-            src="https://res.cloudinary.com/ddtbb44ju/image/upload/c_crop,w_375/v1727995176/logo_lvighp.png"
+            src="https://res.cloudinary.com/ddtbb44ju/image/upload/c_crop,w_150,h_150/v1728950900/navbar-logo_ywakpc.png"
             alt="logo"
           />
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              flexGrow: 1,
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            Urbanas Deportivas Todo
-          </Typography>
-          <CartWidget />
-        </Toolbar>
-      </AppBar>
-    </Box>
+        </a>
+      </div>
+      <ul className="navbar-links">
+        <a href="#">
+          <li>Urbanas</li>
+        </a>
+        <a href="#">
+          <li>Deportivas</li>
+        </a>
+        <a href="#">
+          <li>Todas</li>
+        </a>
+      </ul>
+      <div>
+        <CartWidget />
+      </div>
+    </nav>
   );
 };
