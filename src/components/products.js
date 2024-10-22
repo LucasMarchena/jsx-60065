@@ -11,7 +11,7 @@ export const products = [
   },
   {
     id: "2",
-    title: "Nike Ai Force 1 x Supreme",
+    title: "Nike Air Force 1 x Supreme",
     price: 239.9,
     stock: 5,
     imageUrl:
