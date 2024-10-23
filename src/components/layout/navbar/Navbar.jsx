@@ -20,6 +20,9 @@ export const Navbar = () => {
           <li>Deportivas</li>
         </a>
         <a href="#">
+          <li>Elegantes</li>
+        </a>
+        <a href="#">
           <li>Todas</li>
         </a>
       </ul>
