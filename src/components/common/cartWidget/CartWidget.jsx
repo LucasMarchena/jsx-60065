@@ -1,11 +1,12 @@
-import { IoIosCart } from "react-icons/io";
+import { CiShoppingCart } from "react-icons/ci";
 import "./cartWidget.css";
+import { Link } from "react-router-dom";
 
 export const CartWidget = () => {
   return (
-    <div className="container-cartW">
-      <IoIosCart />
+    <Link to="/cart" className="container-cartW">
+      <CiShoppingCart />
       <span>0</span>
-    </div>
+    </Link>
   );
 };
