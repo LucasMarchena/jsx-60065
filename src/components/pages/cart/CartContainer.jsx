@@ -1,7 +1,7 @@
 export const CartContainer = () => {
   return (
     <div>
-      <h1>aca el carrito</h1>
+      <h2>aca el carrito</h2>
     </div>
   );
 };
