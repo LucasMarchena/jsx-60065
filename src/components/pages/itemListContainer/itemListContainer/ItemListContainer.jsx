@@ -5,20 +5,19 @@ import "./itemListContainer.css";
 import { useParams } from "react-router-dom";
 
 export const ItemListContainer = () => {
-  const { category } = useParams();
+  const { name } = useParams();
 
   const [items, setItems] = useState([]);
   useEffect(() => {
-    const fraccion = products.filter(
-      (producto) => producto.category === category
-    );
+    const fraccion = products.filter((producto) => producto.category === name);
+    console.log(fraccion);
     const getProducts = new Promise((resolve) => {
-      resolve(category ? fraccion : products);
+      resolve(name ? fraccion : products);
     });
     getProducts.then((res) => {
       setItems(res);
     });
-  }, [category]);
+  }, [name]);
   return (
     <div className="container-il">
       <ItemList items={items} />
