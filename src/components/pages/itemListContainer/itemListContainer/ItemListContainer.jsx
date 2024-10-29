@@ -9,12 +9,14 @@ export const ItemListContainer = () => {
 
   const [items, setItems] = useState([]);
   useEffect(() => {
+    console.log("todos los productos", products);
     const fraccion = products.filter((producto) => producto.category === name);
-    console.log(fraccion);
+    console.log("productos filtrados", fraccion);
     const getProducts = new Promise((resolve) => {
       resolve(name ? fraccion : products);
     });
     getProducts.then((res) => {
+      console.log("productos a mostrar", res);
       setItems(res);
     });
   }, [name]);
